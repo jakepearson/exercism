@@ -10,7 +10,7 @@ func Valid(input string) bool {
 	if len(input) < 2 {
 		return false
 	}
-	matcher := regexp.MustCompile("\\D")
+	matcher := regexp.MustCompile(`\D`)
 	if matcher.FindStringIndex(input) != nil {
 		return false
 	}
