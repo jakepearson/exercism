@@ -7,7 +7,11 @@ import (
 func TestSublist(t *testing.T) {
 	for _, tc := range testCases {
 		if actual := Sublist(tc.listOne, tc.listTwo); actual != tc.expected {
+<<<<<<< HEAD
 			//t.Fatalf("FAIL: %s\nExpected: %#v\nActual: %#v", tc.description, tc.expected, actual)
+=======
+			t.Fatalf("FAIL: %s\nExpected: %#v\nActual: %#v", tc.description, tc.expected, actual)
+>>>>>>> Clojure
 		}
 		t.Logf("PASS: %s", tc.description)
 	}
